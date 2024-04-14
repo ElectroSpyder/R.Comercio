@@ -3,9 +3,7 @@ import { CartWidget } from '../CartWidget/CartWidget'
 import {  Menu,
     MenuButton,
     MenuList,
-    MenuItem,
     MenuItemOption,
-    MenuGroup,
     MenuOptionGroup,
     MenuDivider,
     Button, 
@@ -15,7 +13,7 @@ import { GrSettingsOption, GrShareOption, GrInstallOption } from "react-icons/gr
 export const NavBar = () => {
   return (
     <div>
-        <Heading>Tienda e-commerce</Heading>
+        <Heading>Tienda E-commerce</Heading>
         <Menu>
         <MenuButton colorScheme='red' as={Button} rightIcon={ <GrInstallOption />} >       
           <span>&nbsp; Menu</span>  
