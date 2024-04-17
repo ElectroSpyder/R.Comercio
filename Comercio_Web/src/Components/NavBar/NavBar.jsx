@@ -7,8 +7,9 @@ import {  Menu,
     MenuOptionGroup,
     MenuDivider,
     Button, 
-    Heading } from '@chakra-ui/react'
+    Heading, Link } from '@chakra-ui/react'
 import { GrSettingsOption, GrShareOption, GrInstallOption } from "react-icons/gr";
+
 
 export const NavBar = () => {
   return (
@@ -22,7 +23,7 @@ export const NavBar = () => {
             <MenuOptionGroup defaultValue='asc' title='Submenu uno' type='radio'>
                         <MenuItemOption value='asc'>
                         <GrShareOption />
-                        <span>&nbsp; Opción Uno</span>
+                        <Link to='/categoria/frutas'>Frutas</Link>
                         </MenuItemOption>
                         <MenuItemOption value='desc'>
                         <GrSettingsOption />
