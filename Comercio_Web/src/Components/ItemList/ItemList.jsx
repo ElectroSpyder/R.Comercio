@@ -5,10 +5,10 @@ import { Box, Flex } from '@chakra-ui/react'
 export const ItemList = ({products}) => {
  
   return (
-    <Flex wrap={'wrap'} justify={'center'} align={'center'}>
+    <Flex direction='column' wrap='wrap' justify='center' align='center'>
       {
         products.map((x) => (
-          <Box key={x.id}>
+          <Box key={x.id} mt='4' width='80%'>
             <Item {...x} />
           </Box>
         ))
